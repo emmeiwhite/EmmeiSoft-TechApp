@@ -14,7 +14,7 @@ function Header() {
               Home
             </Link>
             <Link
-              href={'/'}
+              href={'/about'}
               className="hover:text-amber-600">
               About
             </Link>
