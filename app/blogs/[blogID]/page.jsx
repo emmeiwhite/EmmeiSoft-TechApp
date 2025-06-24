@@ -2,7 +2,7 @@
   In our Next.JS application, we can generate dynamic pages on build time as well for special cases such as Dynamically Generated Blogs, Which usually in normal circumstances are generated at run-time as per the slug.
 
   But for Blog pages usually the content for each Blog usually stays the same. And here is when we can make use of a concept called Static Site Generation. Now on build time itself our Blog pages will get generated.
-  
+
   It improves performance of the application. Since we can interact with all our blogs as if we are using SPA, all the Blogs gets pre-rendered.
  */
 
@@ -12,6 +12,7 @@ export function generateStaticParams() {
 }
    --- */
 
+export const dynamicParams = false
 const url = 'https://dummyjson.com/posts'
 
 export async function generateStaticParams() {
