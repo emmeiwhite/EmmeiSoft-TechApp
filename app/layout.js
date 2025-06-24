@@ -1,4 +1,6 @@
+import Header from '@/components/Header'
 import './globals.css'
+import Footer from '@/components/Footer'
 
 export const metadata = {
   title: 'emmeisoft-education-platform',
@@ -9,9 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <header>MAIN APP HEADER</header>
+        <Header />
         {children}
-        <footer>MAIN APP FOOTER</footer>
+        <Footer />
       </body>
     </html>
   )
