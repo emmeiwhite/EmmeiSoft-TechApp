@@ -25,6 +25,8 @@ export async function generateStaticParams() {
 
 export default async function SingleBlog({ params }) {
   const { blogID } = await params
+
+  console.log('blogID:', blogID)
   return (
     <div className="">
       <div className="py-8">
