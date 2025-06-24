@@ -6,12 +6,11 @@
   It improves performance of the application. Since we can interact with all our blogs as if we are using SPA, all the Blogs gets pre-rendered.
  */
 
-/* ---
 export function generateStaticParams() {
   return [({ blogID: '1' }, { blogID: '2' }, { blogID: '3' }, { blogID: '4' }, { blogID: '5' })]
 }
-   --- */
 
+/* ---
 export const dynamicParams = false
 const url = 'https://dummyjson.com/posts'
 
@@ -23,6 +22,7 @@ export async function generateStaticParams() {
     blogID: `${post.id}`
   }))
 }
+---  */
 
 export default async function SingleBlog({ params }) {
   const { blogID } = await params

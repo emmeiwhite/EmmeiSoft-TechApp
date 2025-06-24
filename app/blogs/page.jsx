@@ -1,6 +1,8 @@
-import Link from 'next/link'
+import Comments from '@/components/Comments'
+import Likes from '@/components/Likes'
+import Views from '@/components/Views'
 
-function BlogsPage() {
+async function BlogsPage() {
   return (
     <div className="">
       <div className="py-8">
@@ -10,23 +12,16 @@ function BlogsPage() {
           We write about different recipes and make life of cooks easy{' '}
           <span className="text-5xl ml-4">🥗</span>
         </p>
-        {/* <div className="mt-8 flex gap-3">
-          <Link
-            className="text-orange-500 hover:text-orange-700 hover:underline transition-all"
-            href="/blogs/1">
-            Blog 1
-          </Link>
-          <Link
-            className="text-orange-500 hover:text-orange-700 hover:underline transition-all"
-            href="/blogs/2">
-            Blog 2
-          </Link>
-          <Link
-            className="text-orange-500 hover:text-orange-700 hover:underline transition-all"
-            href="/blogs/3">
-            Blog 3
-          </Link>
-        </div> */}
+
+        <div>
+          <h1 className="text-2xl font-semibold my-5">User Engagement</h1>
+          <div className="flex flex-col gap-2">
+            {/* I am rendering Views Components which Makes a dummy API call, I expect the whole page to not render until 3s */}
+            <Views />
+            <Comments />
+            <Likes />
+          </div>
+        </div>
       </div>
     </div>
   )
