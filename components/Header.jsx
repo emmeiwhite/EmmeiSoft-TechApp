@@ -25,6 +25,12 @@ function Header() {
               className="hover:text-amber-600">
               Services
             </Link>
+
+            <Link
+              href={'/blogs'}
+              className="hover:text-amber-600">
+              Blogs
+            </Link>
           </div>
         </nav>
       </div>
