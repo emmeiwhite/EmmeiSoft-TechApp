@@ -1,5 +1,6 @@
 import Comments from '@/components/Comments'
 import Likes from '@/components/Likes'
+import Skeleton from '@/components/Skeleton'
 import Views from '@/components/Views'
 import { Suspense } from 'react'
 
@@ -18,12 +19,17 @@ async function BlogsPage() {
           <h1 className="text-2xl font-semibold my-5">User Engagement</h1>
           <div className="flex flex-col gap-2">
             {/* I am rendering Views Components which Makes a dummy API call, I expect the whole page to not render until 3s */}
-            <Suspense fallback={<div className="text-amber-500 font-bold">Loading ...</div>}>
+            <Suspense fallback={<Skeleton />}>
               <Views />
             </Suspense>
 
-            <Comments />
-            <Likes />
+            <Suspense fallback={<Skeleton />}>
+              <Comments />
+            </Suspense>
+
+            <Suspense fallback={<Skeleton />}>
+              <Likes />
+            </Suspense>
           </div>
         </div>
       </div>
