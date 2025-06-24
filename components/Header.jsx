@@ -5,7 +5,9 @@ function Header() {
     <header className="bg-amber-200">
       <div className="max-w-5xl mx-auto px-6">
         <nav className="flex justify-between items-center py-2">
-          <h1 className="text-2xl font-semibold text-teal-700">EmmeiSoft Tech</h1>
+          <Link href={'/'}>
+            <h1 className="text-2xl font-semibold text-teal-700">EmmeiSoft Tech</h1>
+          </Link>
 
           <div className="flex justify-between items-center gap-5">
             <Link
