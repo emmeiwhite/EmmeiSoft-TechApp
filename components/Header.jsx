@@ -6,10 +6,10 @@ function Header() {
       <div className="max-w-5xl mx-auto px-6">
         <nav className="flex justify-between items-center py-2">
           <Link href={'/'}>
-            <h1 className="text-2xl font-semibold text-teal-700">EmmeiSoft Tech</h1>
+            <h1 className="text-xl font-semibold text-teal-700">EmmeiSoft</h1>
           </Link>
 
-          <div className="flex justify-between items-center gap-5">
+          <div className="flex justify-between items-center gap-5 text-sm">
             <Link
               href={'/'}
               className="hover:text-amber-600">
@@ -30,6 +30,12 @@ function Header() {
               href={'/blogs'}
               className="hover:text-amber-600">
               Blogs
+            </Link>
+
+            <Link
+              href={'/quotes'}
+              className="hover:text-amber-600">
+              Quotes
             </Link>
           </div>
         </nav>

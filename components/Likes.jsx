@@ -8,9 +8,11 @@ function Likes() {
 
   const [likes, setLikes] = useState(0)
 
+  console.log('Like Component')
   const handleClick = () => {
     setLikes(prev => prev + 1)
   }
+
   return (
     <div>
       <div>
