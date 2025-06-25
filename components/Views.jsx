@@ -1,8 +1,11 @@
 'use client'
 
-export default async function Views() {
+import { useState } from 'react'
+
+export default function Views() {
   // Mock API call so that the components renders with a delay
   //   await new Promise(resolve => setTimeout(resolve, 3000))
 
-  return <div>10K Views</div>
+  const [views, setViews] = useState(0)
+  return <div>{views} Views</div>
 }
