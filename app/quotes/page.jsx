@@ -1,3 +1,6 @@
+'use client'
+
+import Button from '@/components/Button'
 import Comments from '@/components/Comments'
 import Quote from '@/components/Quote'
 
@@ -7,13 +10,7 @@ function QuotesPage() {
       <div className="py-8">
         <h1 className="text-2xl font-semibold"> Quotes Page </h1>
 
-        <button
-          className="bg-teal-300 px-3 py-2 rounded"
-          onClick={() => {
-            console.log('I was clicked')
-          }}>
-          Click Me
-        </button>
+        <Button />
         <p className="mt-5">
           Quotes from the people of wisdom are full of wisdom, let's get ourselves acquianted with
           few quotes of wise people
