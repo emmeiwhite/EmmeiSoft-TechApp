@@ -1,4 +1,17 @@
+'use client'
+
 export default function Share() {
-  console.log(window)
-  return <div>Share ⤴️</div>
+  /** To avoid the error on the server we do */
+  if (typeof window !== 'undefined') {
+    console.log(window) // On the Server still we'll get the error that window is not defined but the code is shipped to the Client wisely by Next.js
+  }
+  return (
+    <div className="mt-5">
+      <span className="bg-amber-500 px-2 py-1 cursor-pointer text-blue-700">Share ⤴️</span>
+    </div>
+  )
 }
+
+// Server Components render only on the server
+// Client Components render on Server as well as the Client
+// with "use client" directive, we createt a Client Component
