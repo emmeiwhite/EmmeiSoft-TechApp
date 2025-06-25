@@ -1,4 +1,4 @@
-// 'use client'
+'use client'
 
 export default function Share() {
   /** To avoid the error on the server we do */
@@ -13,7 +13,7 @@ export default function Share() {
         onClick={() => {
           console.log('Life is sorted with client components')
         }}>
-        Purchase 🚀
+        Purchase 🚀 {console.log('Running on Server ...')}
       </button>
     </div>
   )
