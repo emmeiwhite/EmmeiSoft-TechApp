@@ -1,5 +1,3 @@
-'use client'
-
 import Comments from '@/components/Comments'
 import Quote from '@/components/Quote'
 
