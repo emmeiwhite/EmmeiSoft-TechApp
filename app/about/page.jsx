@@ -1,3 +1,4 @@
+import HydrationTest from '@/components/HydrationTest'
 import Share from '@/components/Share'
 
 function AboutPage() {
@@ -12,6 +13,8 @@ function AboutPage() {
         </p>
 
         <Share />
+
+        <HydrationTest />
       </div>
     </div>
   )
