@@ -14,7 +14,7 @@ function AboutPage() {
 
         <Share />
 
-        <HydrationTest />
+        {/* <HydrationTest /> */}
       </div>
     </div>
   )
