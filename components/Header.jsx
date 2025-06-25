@@ -9,7 +9,7 @@ function Header() {
             <h1 className="text-xl font-semibold text-teal-700">EmmeiSoft</h1>
           </Link>
 
-          <div className="flex justify-between items-center gap-5 text-sm">
+          <div className="flex justify-between items-center gap-5 wrap text-sm">
             <Link
               href={'/'}
               className="hover:text-amber-600">
