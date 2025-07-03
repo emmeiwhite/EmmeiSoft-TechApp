@@ -40,4 +40,6 @@ function PostsPage() {
   )
 }
 
+// ✅ This fetches data on the browser after page loads.
+
 export default PostsPage
